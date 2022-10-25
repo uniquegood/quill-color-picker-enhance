@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>quill-color-picker-enhance Example</title>
+    <style type="text/css">
+      #editor-container {
+        height: 320px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="editor-container"></div>
+    <script src="https://cdn.quilljs.com/1.3.7/quill.min.js"></script>
+    <link href="https://cdn.quilljs.com/1.3.7/quill.snow.css" rel="stylesheet" />
+
+    <script src="../../dist/index.min.js"></script>
+    <style>
+      .ql-color .ql-picker-options [data-value='custom-picker']:before,
+      .ql-background .ql-picker-options [data-value='custom-picker']:before {
+        content: 'Pick Color';
+      }
+
+      .ql-color .ql-picker-options [data-value='custom-picker'],
+      .ql-background .ql-picker-options [data-value='custom-picker'] {
+        background: none !important;
+        width: 100% !important;
+        height: 25px !important;
+        text-align: center;
+        color: blue;
+        text-decoration: underline;
+      }
+
+      .ql-color-label.ql-stroke.ql-transparent {
+        opacity: 1;
+      }
+    </style>
+
+    <script>
+      Quill.register(
+        'themes/snow-quill-color-picker-enhance',
+        QuillColorPickerEnhance.SnowTheme,
+        true
+      );
+
+      const quill = new Quill('#editor-container', {
+        modules: {
+          toolbar: [{ color: [] }, { background: [] }]
+        },
+        theme: 'snow-quill-color-picker-enhance'
+      });
+    </script>
+  </body>
+</html>

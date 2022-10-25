@@ -1,0 +1,18 @@
+.ql-color .ql-picker-options [data-value='custom-picker']:before,
+.ql-background .ql-picker-options [data-value='custom-picker']:before {
+  content: 'Pick Color';
+}
+
+.ql-color .ql-picker-options [data-value='custom-picker'],
+.ql-background .ql-picker-options [data-value='custom-picker'] {
+  background: none !important;
+  width: 100% !important;
+  height: 25px !important;
+  text-align: center;
+  color: blue;
+  text-decoration: underline;
+}
+
+.ql-color-label.ql-stroke.ql-transparent {
+  opacity: 1;
+}
