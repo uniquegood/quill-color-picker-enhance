@@ -75,7 +75,7 @@ export default class ColorPicker extends Picker {
     };
 
     for (const svgShape of svgShapes) {
-      if (svgShape) {
+      if (svgShape && this.format) {
         svgShape.style.stroke = calculateStrokeColor[this.format]();
       }
     }
