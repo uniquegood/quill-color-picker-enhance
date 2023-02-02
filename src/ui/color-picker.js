@@ -26,8 +26,10 @@ export default class ColorPicker extends Picker {
         ''
       )}')`;
       item.style.backgroundSize = 'cover';
+      item.title = 'Clear';
+    } else {
+      item.title = value;
     }
-
     return item;
   }
 
