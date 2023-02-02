@@ -26,7 +26,7 @@ export default class ColorPicker extends Picker {
         ''
       )}')`;
       item.style.backgroundSize = 'cover';
-      item.title = 'Clear';
+      item.title = '색상 지우기';
     } else {
       item.title = value;
     }
