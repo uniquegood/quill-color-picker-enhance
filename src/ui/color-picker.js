@@ -1,4 +1,5 @@
 import Quill from 'quill';
+import icons from './icons';
 
 const Picker = Quill.import('ui/color-picker');
 
@@ -14,6 +15,20 @@ export default class ColorPicker extends Picker {
       .forEach(function (item) {
         item.classList.add('ql-primary');
       });
+  }
+  buildItem(option) {
+    let item = super.buildItem(option);
+    let value = option.getAttribute('value');
+
+    if (value === null) {
+      item.style.backgroundImage = `url('data:image/svg+xml;utf8,${icons.color.cancel.replace(
+        /[\t\n]/g,
+        ''
+      )}')`;
+      item.style.backgroundSize = 'cover';
+    }
+
+    return item;
   }
 
   selectItem(item, trigger) {

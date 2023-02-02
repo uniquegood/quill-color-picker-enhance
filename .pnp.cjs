@@ -34,6 +34,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.7.1"],\
             ["quill", "npm:1.3.7"],\
             ["rollup", "npm:3.2.3"],\
+            ["rollup-plugin-svg", "npm:2.0.0"],\
             ["rollup-plugin-terser", "virtual:094ac2513915d579064978d6b96093aa5b7c4cbde458c948f1f0d2e8905572af3abc0feae33b54731e207b46607ef183ea224dfa8ea9215c873515af410336c8#npm:7.0.2"]\
           ],\
           "linkType": "SOFT"\
@@ -679,6 +680,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["estree-walker", [\
+        ["npm:0.2.1", {\
+          "packageLocation": "./.yarn/cache/estree-walker-npm-0.2.1-9936e19104-eea29a6ab0.zip/node_modules/estree-walker/",\
+          "packageDependencies": [\
+            ["estree-walker", "npm:0.2.1"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:2.0.2", {\
           "packageLocation": "./.yarn/cache/estree-walker-npm-2.0.2-dfab42f65c-6151e6f982.zip/node_modules/estree-walker/",\
           "packageDependencies": [\
@@ -1490,6 +1498,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.7.1"],\
             ["quill", "npm:1.3.7"],\
             ["rollup", "npm:3.2.3"],\
+            ["rollup-plugin-svg", "npm:2.0.0"],\
             ["rollup-plugin-terser", "virtual:094ac2513915d579064978d6b96093aa5b7c4cbde458c948f1f0d2e8905572af3abc0feae33b54731e207b46607ef183ea224dfa8ea9215c873515af410336c8#npm:7.0.2"]\
           ],\
           "linkType": "SOFT"\
@@ -1582,6 +1591,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["rollup-plugin-svg", [\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/rollup-plugin-svg-npm-2.0.0-bfe58a0e2a-60a0d9c42c.zip/node_modules/rollup-plugin-svg/",\
+          "packageDependencies": [\
+            ["rollup-plugin-svg", "npm:2.0.0"],\
+            ["rollup-pluginutils", "npm:1.5.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["rollup-plugin-terser", [\
         ["npm:7.0.2", {\
           "packageLocation": "./.yarn/cache/rollup-plugin-terser-npm-7.0.2-3f55469f5a-af84bb7a7a.zip/node_modules/rollup-plugin-terser/",\
@@ -1604,6 +1623,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packagePeers": [\
             "@types/rollup",\
             "rollup"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["rollup-pluginutils", [\
+        ["npm:1.5.2", {\
+          "packageLocation": "./.yarn/cache/rollup-pluginutils-npm-1.5.2-ae09e53294-8c669c0b3d.zip/node_modules/rollup-pluginutils/",\
+          "packageDependencies": [\
+            ["rollup-pluginutils", "npm:1.5.2"],\
+            ["estree-walker", "npm:0.2.1"],\
+            ["minimatch", "npm:3.1.2"]\
           ],\
           "linkType": "HARD"\
         }]\

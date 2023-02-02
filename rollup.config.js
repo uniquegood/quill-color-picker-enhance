@@ -2,8 +2,9 @@ import resolve from '@rollup/plugin-node-resolve';
 import { terser } from 'rollup-plugin-terser';
 
 import commonjs from '@rollup/plugin-commonjs';
+import svg from 'rollup-plugin-svg';
 
-const plugins = [resolve(), commonjs()];
+const plugins = [resolve(), commonjs(), svg()];
 
 const esm = {
   input: './src/index.js',
