@@ -54,3 +54,7 @@ Quill.register('themes/snow-quill-color-picker-enhance', QuillColorPickerEnhance
 ```
 
 Please use the theme `snow-quill-color-picker-enhance`.
+
+---
+
+_quill-color-picker-enhance_ is primarily distributed under the terms of the MIT license. See [LICENSE](./LICENSE) for details.
